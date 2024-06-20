@@ -20,8 +20,8 @@ def load_labels(labels_path):
         return [line.strip() for line in file.readlines()]
 
 # Sidebar for model selection
-st.sidebar.title("Model Selection")
-model_choice = st.sidebar.selectbox("Hey there!\nChoose a model", list(model_paths.keys()))
+st.sidebar.title("Medical ML Model Selection")
+model_choice = st.sidebar.selectbox("Hey there! Choose a model", list(model_paths.keys()))
 
 # Load the selected model and corresponding labels
 model_path, labels_path = model_paths[model_choice]
