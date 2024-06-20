@@ -21,7 +21,7 @@ def load_labels(labels_path):
 
 # Sidebar for model selection
 st.sidebar.title("Model Selection")
-model_choice = st.sidebar.selectbox("Choose a model", list(model_paths.keys()))
+model_choice = st.sidebar.selectbox("Hey there!\nChoose a model", list(model_paths.keys()))
 
 # Load the selected model and corresponding labels
 model_path, labels_path = model_paths[model_choice]
